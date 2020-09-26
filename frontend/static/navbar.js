@@ -22,10 +22,10 @@ var calNav = function () {
     window.location.href = "/calendar"
 }
 
-var helpNav = function () {
-    window.location.href = "/help"
+var shopNav = function () {
+    window.location.href = "/shopping"
 }
 
-var settingsNav = function () {
-    window.location.href = "/settings"
+var rentNav = function () {
+    window.location.href = "/rent"
 }
