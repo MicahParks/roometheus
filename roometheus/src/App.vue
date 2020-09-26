@@ -1,13 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> | 
-      <router-link to="/whiteboard">Whiteboard</router-link>
-    </div>
+    <navigation ></navigation>
     <router-view />
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import Navigation from "@/views/Navigation.vue";
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+export default {
+  name: "App",
+  components: {
+    Navigation
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
