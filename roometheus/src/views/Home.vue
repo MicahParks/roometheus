@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <img onClick="kickAssApp()" src="../assets/logo.gif" width="30%" height="auto" />
+          <img onClick="kickAssApp()" src="../assets/logoWebReady.png" width="30%" height="auto" />
         </v-col>
       </v-row>
 
