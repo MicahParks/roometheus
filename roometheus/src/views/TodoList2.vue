@@ -37,7 +37,7 @@
       </ul>
     </div>
     <div>
-      <span class="ml-auto">{{ todos.length }} tasks remaining</span>
+      <span class="ml-auto">{{ todos.length }} items remaining</span>
     </div>
   </div>
 </template>
