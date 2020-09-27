@@ -1,24 +1,49 @@
 <template>
-  <b-navbar id="nav" toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">Roometheus</b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  <v-app-bar app color="primary" dark>
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
 
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item><router-link to="/">Home</router-link></b-nav-item>
-        <b-nav-item><router-link to="/about">About</router-link></b-nav-item>
-        <b-nav-item><router-link to="/whiteboard">Whiteboard</router-link></b-nav-item >
-        <b-nav-item><router-link to="/calendar">Calendar</router-link></b-nav-item >
-        <b-nav-item><router-link to="/todo">Todo List</router-link></b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+        <v-img
+          alt="Vuetify Name"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="100"
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+          width="100"
+        />
+      </div>
+          <router-link to="/calendar">Calendar</router-link> |
+          <router-link to="/whiteboard">Whiteboard</router-link> |
+          <router-link to="/todo">Todo List</router-link> |
+          <router-link to="/about">About</router-link> |
+          <router-link to="/">Home</router-link>
+
+
+
+
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+        text
+      >
+        <span class="mr-2">Latest Release</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-app-bar>
 </template>
 
 <script>
-
-
 export default {
   name: "Navigation"
 };
