@@ -5,7 +5,7 @@
         alt="Vuetify Logo"
         class="shrink mr-2"
         contain
-        src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+        src="../assets/logo.png"
         transition="scale-transition"
         width="40"
       />
@@ -22,7 +22,7 @@
       ><i class="fas fa-calendar"></i> Calendar
     </router-link>
     <router-link to="/todo"
-      ><i class="fas fa-shopping-basket"></i> Groceries
+      ><i class="fsa fa-shopping-basket"></i> Groceries
     </router-link>
     <router-link to="/whiteboard"
       ><i class="fas fa-chalkboard"></i> Whiteboard

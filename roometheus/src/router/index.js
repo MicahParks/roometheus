@@ -1,7 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
 import Whiteboard from "../views/Whiteboard.vue";
 import Calendar from "../views/Calendar.vue";
 import TodoList2 from "../views/TodoList2.vue";
@@ -14,11 +13,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: About
   },
   {
     path: "/whiteboard",
