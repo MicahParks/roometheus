@@ -30,7 +30,7 @@
           </div>
           <div>
             <a  href="#/todo">
-          <icon class="fsa fa-shopping-basket fa-5x" />
+          <icon class="fas fa-shopping-basket fa-5x" />
             </a>
           </div>
         </v-col>

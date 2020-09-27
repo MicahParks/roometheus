@@ -22,7 +22,7 @@
       ><i class="fas fa-calendar"></i> Calendar
     </router-link>
     <router-link to="/todo"
-      ><i class="fsa fa-shopping-basket"></i> Groceries
+      ><i class="fas fa-shopping-basket"></i> Groceries
     </router-link>
     <router-link to="/whiteboard"
       ><i class="fas fa-chalkboard"></i> Whiteboard
