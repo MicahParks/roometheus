@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <img onClick="kickAssApp()" src="../assets/logo.png" width="25%" height="auto" />
+          <img onClick="kickAssApp()" src="../assets/logo.gif" width="30%" height="auto" />
         </v-col>
       </v-row>
 
@@ -32,7 +32,7 @@ Shine a light on your hectic schedule.  Keep up with your roommates' classes, pl
             </a>
           </div>
           <div class="feature-desc">
-            Bring your creativity to life with your own whiteboard.  Doodle, create, and share your Mona Lisa's with your roommates.
+            Quickly and easily share your ideas using our shared whiteboard.  Collaborate with your roommates on brainstorming,  class projects, and doodle sessions.
           </div>
         </v-col>
 
