@@ -1,0 +1,20 @@
+swagger: "2.0"
+
+info:
+  version: ""
+  title: "title"
+  description: "description"
+  termsOfService: "terms"
+
+basePath: "/api/storage"
+
+paths:
+  /create:
+    put:
+      summary: ""
+      description: ""
+      responses:
+        200:
+          description: OK
+
+
