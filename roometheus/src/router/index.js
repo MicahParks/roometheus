@@ -5,6 +5,7 @@ import About from "../views/About.vue";
 import Whiteboard from "../views/Whiteboard.vue";
 import Calendar from "../views/Calendar.vue";
 import TodoList2 from "../views/TodoList2.vue";
+import Cow from "../views/Cow.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: "/todo",
     name: "Todo List",
     component: TodoList2
+  },
+  {
+    path: "/cow",
+    name: "Cow",
+    component: Cow
   }
 ];
 

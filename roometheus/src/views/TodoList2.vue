@@ -1,7 +1,7 @@
 <template>
   <div class="todoapp">
     <div class="header">
-      <h1>Todos</h1>
+      <h1>Groceries</h1>
       <input
         class="new-todo"
         autofocus
@@ -12,7 +12,6 @@
       />
     </div>
     <div class="main" v-show="todos.length" v-cloak>
-      <input class="toggle-all" type="checkbox" v-model="allDone" />
       <ul class="todo-list">
         <li
           v-for="todo in filteredTodos"
@@ -184,10 +183,6 @@ export default {
 };
 </script>
 <style scoped>
-[v-cloak] {
-  display: none;
-}
-
 button {
   margin: 0;
   padding: 0;
@@ -215,9 +210,12 @@ input[type="checkbox"] {
 
 .todoapp {
   background: #fff;
-  margin: 130px 0 40px 0;
+  margin: 130px auto 40px auto;
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  min-width: 230px;
+  max-width: 550px;
+  /* margin: 0 auto; */
 }
 
 .todoapp input::-webkit-input-placeholder {
@@ -245,7 +243,7 @@ input[type="checkbox"] {
   font-size: 100px;
   font-weight: 100;
   text-align: center;
-  color: rgba(175, 47, 47, 0.15);
+  color: rgba(44, 62, 80, 0.75);
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
@@ -282,31 +280,6 @@ input[type="checkbox"] {
   position: relative;
   z-index: 2;
   border-top: 1px solid #e6e6e6;
-}
-
-label[for="toggle-all"] {
-  display: none;
-}
-
-.toggle-all {
-  position: absolute;
-  top: -55px;
-  left: -12px;
-  width: 60px;
-  height: 34px;
-  text-align: center;
-  border: none; /* Mobile Safari */
-}
-
-.toggle-all:before {
-  content: "❯";
-  font-size: 22px;
-  color: #e6e6e6;
-  padding: 10px 27px 10px 27px;
-}
-
-.toggle-all:checked:before {
-  color: #737373;
 }
 
 .todo-list {
@@ -413,27 +386,6 @@ label[for="toggle-all"] {
   margin-bottom: -1px;
 }
 
-.footer {
-  color: #777;
-  padding: 10px 15px;
-  height: 20px;
-  text-align: center;
-  border-top: 1px solid #e6e6e6;
-}
-
-.footer:before {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 50px;
-  overflow: hidden;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6,
-    0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6,
-    0 17px 2px -6px rgba(0, 0, 0, 0.2);
-}
-
 .todo-count {
   float: left;
   text-align: left;
@@ -441,37 +393,6 @@ label[for="toggle-all"] {
 
 .todo-count strong {
   font-weight: 300;
-}
-
-.filters {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: absolute;
-  right: 0;
-  left: 0;
-}
-
-.filters li {
-  display: inline;
-}
-
-.filters li a {
-  color: inherit;
-  margin: 3px;
-  padding: 3px 7px;
-  text-decoration: none;
-  border: 1px solid transparent;
-  border-radius: 3px;
-}
-
-.filters li a.selected,
-.filters li a:hover {
-  border-color: rgba(175, 47, 47, 0.1);
-}
-
-.filters li a.selected {
-  border-color: rgba(175, 47, 47, 0.2);
 }
 
 .clear-completed,
@@ -508,36 +429,7 @@ html .clear-completed:active {
 .info a:hover {
   text-decoration: underline;
 }
-
-/*
-	Hack to remove background from Mobile Safari.
-	Can't use it globally since it destroys checkboxes in Firefox
-*/
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .toggle-all,
-  .todo-list li .toggle {
-    background: none;
-  }
-
-  .todo-list li .toggle {
-    height: 40px;
-  }
-
-  .toggle-all {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    -webkit-appearance: none;
-    appearance: none;
-  }
-}
-
-@media (max-width: 430px) {
-  .footer {
-    height: 50px;
-  }
-
-  .filters {
-    bottom: 10px;
-  }
+.header {
+  margin-top: 180px;
 }
 </style>
