@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navigation ></navigation>
+    <navigation></navigation>
     <router-view />
   </div>
 </template>
@@ -8,8 +8,8 @@
 <script>
 // @ is an alias to /src
 import Navigation from "@/views/Navigation.vue";
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 export default {
   name: "App",
   components: {
