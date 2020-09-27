@@ -3,6 +3,12 @@
     <v-container>
       <v-row>
         <v-col>
+          <img src="../assets/logo.png" width="20%" height="auto"/>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col>
         <div>
         Calendar
         </div>
